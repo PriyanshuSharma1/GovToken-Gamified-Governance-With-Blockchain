@@ -3,17 +3,17 @@ export default function notificationsPage() {
     <div>
       <h1> Feed</h1>
       <div className="box">
-        <h1 style={{ color: "green" }}>Welcome To My fucking world !!</h1>
-        <p>let's write bullshits here.</p>
+        <h1 style={{ color: "green" }}>Welcome To My world !!</h1>
+        <p>let's write here.</p>
         <button className="appreciate-button">Appreciate</button>
       </div>
       <div className="box">
-        <h1 style={{ color: "green" }}>Welcome To My fucking world !!</h1>
-        <p>let's write bullshits here.</p>
+        <h1 style={{ color: "green" }}>Welcome To My world !!</h1>
+        <p>let's write here.</p>
       </div>
       <div className="box">
-        <h1 style={{ color: "green" }}>Welcome To My fucking world !!</h1>
-        <p>let's write bullshits here.</p>
+        <h1 style={{ color: "green" }}>Welcome To My world !!</h1>
+        <p>let's write here.</p>
       </div>
     </div>
   );
