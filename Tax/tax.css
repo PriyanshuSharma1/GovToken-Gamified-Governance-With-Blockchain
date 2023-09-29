@@ -1,0 +1,60 @@
+/* App.css */
+body {
+    background-color: #f0f0f0; /* Background color for the entire page */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tax-portal h1 {
+    margin-bottom: 24px; /* Add margin only after the title 'Tax Portal' */
+  }
+  .tax-portal {
+    background-color: #ffffff;
+    width: 80%; /* Adjust the width of the tax portal */
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for the tax portal */
+  }
+  
+  .tax-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    justify-content: space-between; /* Distribute cards evenly */
+    gap: 20px;
+  }
+  
+  .tax-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for individual tax cards */
+    width: calc(50% - 10px); /* Set card width to 50% with 10px gap in between */
+    box-sizing: border-box;
+  }
+  
+  .tax-card h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .tax-card p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #007bff; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Hover state color */
+  }
+  
