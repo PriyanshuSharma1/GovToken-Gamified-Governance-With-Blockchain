@@ -35,3 +35,19 @@ h1 {
   color: black;
   box-shadow: 1px 1px 10px 1px grey;
 }
+/* Add your styles here */
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.feed-content {
+  flex: 1;
+}
+
+.vertical-rectangular-block {
+  width: 100px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  background-color: #3498db; /* Use your preferred background color */
+  margin-left: 20px; /* Adjust spacing from the feed content */
+}
