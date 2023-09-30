@@ -1,0 +1,41 @@
+/* MinimalisticPoll.css */
+
+.poll-container {
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .poll-question {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+  
+  .poll-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .poll-option {
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .poll-option:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .poll-option.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
