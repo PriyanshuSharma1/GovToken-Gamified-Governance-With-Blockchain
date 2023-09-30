@@ -1,3 +1,42 @@
+import {Routes, Route, useNavigate} from 'react-router-dom';
+
+export default function App() {
+  const navigate = useNavigate();
+
+  const navigateToContacts = () => {
+    // 👇️ navigate to /contacts
+    navigate('/contacts');
+  };
+
+  const navigateHome = () => {
+    // 👇️ navigate to /
+    navigate('/');
+  };
+
+  return (
+    <div>
+      <div>
+        <button onClick={navigateHome}>Home</button>
+        <hr />
+        <button onClick={navigateToContacts}>Contacts</button>
+
+        <Routes>
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    </div>
+  );
+}
+
+function Home() {
+  return <h2>Home</h2>;
+}
+
+function Contacts() {
+  return <h2>Contacts</h2>;
+}
+
 const upcomingEvents = [
   {
     events: "",
@@ -12,6 +51,9 @@ const upcomingEvents = [
     events: "",
   },
 ];
+const navigateCategories = () => {
+  navigate("/categories");
+};
 export default function Home() {
   return (
     <div className="container">
@@ -20,7 +62,9 @@ export default function Home() {
           <button className="simple-button">September Goals</button>
           <div className="box2"></div>
         </div>
-        <h1>What Next?</h1>
+        <button className="text-3xl m-6" onClick={navigateCategories}>
+          What Next?
+        </button>
         <div className="container">
           <button className="content1 hover:bg-orange-400 rounded-lg">
             {" "}
