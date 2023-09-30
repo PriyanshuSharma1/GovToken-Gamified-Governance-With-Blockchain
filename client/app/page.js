@@ -1,41 +1,41 @@
-import {Routes, Route, useNavigate} from 'react-router-dom';
+// import { Routes, Route, useNavigate } from "react-router-dom";
 
-export default function App() {
-  const navigate = useNavigate();
+// export default function App() {
+//   const navigate = useNavigate();
 
-  const navigateToContacts = () => {
-    // 👇️ navigate to /contacts
-    navigate('/contacts');
-  };
+//   const navigateToContacts = () => {
+//     // 👇️ navigate to /contacts
+//     navigate('/contacts');
+//   };
 
-  const navigateHome = () => {
-    // 👇️ navigate to /
-    navigate('/');
-  };
+//   const navigateHome = () => {
+//     // 👇️ navigate to /
+//     navigate('/');
+//   };
 
-  return (
-    <div>
-      <div>
-        <button onClick={navigateHome}>Home</button>
-        <hr />
-        <button onClick={navigateToContacts}>Contacts</button>
+//   return (
+//     <div>
+//       <div>
+//         <button onClick={navigateHome}>Home</button>
+//         <hr />
+//         <button onClick={navigateToContacts}>Contacts</button>
 
-        <Routes>
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
-    </div>
-  );
-}
+//         <Routes>
+//           <Route path="/contacts" element={<Contacts />} />
+//           <Route path="/" element={<Home />} />
+//         </Routes>
+//       </div>
+//     </div>
+//   );
+// }
 
-function Home() {
-  return <h2>Home</h2>;
-}
+// function Home() {
+//   return <h2>Home</h2>;
+// }
 
-function Contacts() {
-  return <h2>Contacts</h2>;
-}
+// function Contacts() {
+//   return <h2>Contacts</h2>;
+// }
 
 const upcomingEvents = [
   {
@@ -51,9 +51,10 @@ const upcomingEvents = [
     events: "",
   },
 ];
-const navigateCategories = () => {
-  navigate("/categories");
-};
+// const navigateCategories = () => {
+//   navigate("/categories");
+// };
+
 export default function Home() {
   return (
     <div className="container">
@@ -62,9 +63,9 @@ export default function Home() {
           <button className="simple-button">September Goals</button>
           <div className="box2"></div>
         </div>
-        <button className="text-3xl m-6" onClick={navigateCategories}>
+        <a className="text-3xl m-6" href={"/categories"}>
           What Next?
-        </button>
+        </a>
         <div className="container">
           <button className="content1 hover:bg-orange-400 rounded-lg">
             {" "}

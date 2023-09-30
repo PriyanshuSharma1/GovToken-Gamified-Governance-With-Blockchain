@@ -1,18 +1,18 @@
-import { Project } from './Project';
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useState } from 'react';
+"use client";
+
+import { Project } from "./Project";
+import React from "react";
+import PropTypes from "prop-types";
+import { useState } from "react";
 
 function formatDescription(description) {
-    return description;
-  }
+  return description;
+}
 
 function ProjectCard(props) {
   const { project, onSubmitProof } = props;
   const [selectedFile, setSelectedFile] = useState(null);
   const [showSubmitFileButton, setShowSubmitFileButton] = useState(false);
-
-  
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -25,13 +25,13 @@ function ProjectCard(props) {
     if (selectedFile) {
       onSubmitProof(project, selectedFile);
     } else {
-      alert('Please select a file for proof submission.');
+      alert("Please select a file for proof submission.");
     }
   };
- 
+
   return (
-    <div className="card">
-      <section className="section dark" >
+    <div className="card shadow-md">
+      <section className="section dark">
         <h5 className="strong">
           <strong>{project.name}</strong>
         </h5>
@@ -52,8 +52,8 @@ function ProjectCard(props) {
   );
 }
 
-ProjectCard.propTypes =  {
-  project:PropTypes.instanceOf(Project).isRequired,
+ProjectCard.propTypes = {
+  project: PropTypes.instanceOf(Project).isRequired,
   onSubmitProof: PropTypes.func.isRequired,
 };
 
