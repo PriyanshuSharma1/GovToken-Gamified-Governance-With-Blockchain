@@ -30,17 +30,20 @@ function ProjectCard(props) {
   };
 
   return (
-    <div className="card shadow-md">
+    <div className="card shadow-lg m-2 p-4 rounded-lg bg-gray-300">
       <section className="section dark">
         <h5 className="strong">
           <strong>{project.name}</strong>
         </h5>
         <p>{formatDescription(project.description)}</p>
-        <button className="bordered" onClick={handleSubmit}>
+        <button
+          className="bordered bg-blue-500 text-white p-2 rounded-md"
+          onClick={handleSubmit}
+        >
           Submit Proof of Participation
         </button>
         {showSubmitFileButton && (
-          <div>
+          <div className="">
             <input type="file" onChange={handleFileChange} />
             <button className="bordered" onClick={handleFileSubmit}>
               Submit File

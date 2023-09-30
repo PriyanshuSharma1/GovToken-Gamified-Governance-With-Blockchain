@@ -137,3 +137,14 @@ p {
   height: 60px;
   margin: 0px;
 }
+.card {
+  height: auto; /* Adjust as needed */
+}
+
+.card h5 {
+  font-size: 18px; /* Adjust as needed */
+}
+
+.card p {
+  font-size: 14px; /* Adjust as needed */
+}

@@ -28,11 +28,11 @@ function ProjectList({ projects, onSave }) {
   };
 
   const items = projects.map((project) => (
-    <div key={project.id} className="cols-sm">
+    <div key={project.id} className="w-1/2">
       <ProjectCard project={project} onSubmitProof={onSubmitProof} />
     </div>
   ));
-  return <div className="row">{items}</div>;
+  return <div className="flex flex-wrap justify-between">{items}</div>;
 }
 
 ProjectList.propTypes = {
