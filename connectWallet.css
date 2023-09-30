@@ -1,0 +1,57 @@
+/* YourComponent.css */
+
+/* Container style */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Header style */
+  h1 {
+    color: #333;
+  }
+  
+  /* Wallet info style */
+  .wallet-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Wallet address style */
+  p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Button style */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Token balance style */
+  p.token-balance {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4caf50;
+    margin-top: 10px;
+  }
+  
