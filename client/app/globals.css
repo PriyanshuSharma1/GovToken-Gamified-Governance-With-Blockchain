@@ -6,34 +6,51 @@ body {
 }
 h1 {
   margin: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+p {
+  font-family: Noto Sans TC;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-top: 4rem;
+  padding: 2rem;
 }
 .box {
-  border-radius: 10px;
-  margin-top: 1rem;
-  width: 50%;
+  width: 748px;
   height: 200px;
-  padding: 10px 10px 10px 10px;
-  background-color: #f5f5f5;
-
-  transition: linear all 0.4s;
-  box-shadow: 1px 1px 10px 1px grey;
-  cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 36px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #685f5f;
+  font-family: Noto Sans TC;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Box shadow */
 .box:hover {
 }
 .appreciate-button {
-  display: flex;
-  margin-top: 2rem;
-  align-items: center;
-  background-color: white; /* Use your preferred button color */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: black;
-  box-shadow: 1px 1px 10px 1px grey;
+  color: #000;
+  font-family: Noto Sans TC;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 540;
+  line-height: normal;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  height: 58px;
+  flex-shrink: 0;
+  margin-left: 2rem;
 }
 /* Add your styles here */
 .container {
@@ -46,8 +63,77 @@ h1 {
 }
 
 .vertical-rectangular-block {
-  width: 100px; /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
-  background-color: #3498db; /* Use your preferred background color */
+  width: 400px; /* Adjust width as needed */
+  /* Adjust height as needed */
+  background-color: #f49033; /* Use your preferred background color */
   margin-left: 20px; /* Adjust spacing from the feed content */
+  border-radius: 40px;
+  padding-bottom: 2rem;
+}
+.boxes {
+  width: 350px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  background-color: white; /* Use your preferred background color */
+  margin-left: 30px;
+  margin-top: 20px; /* Adjust spacing from the feed content */
+  border-radius: 40px;
+}
+.box1 {
+  margin: 20px;
+  width: 600px;
+  height: 200px;
+  background-color: #f49033;
+  border-radius: 20px;
+}
+.simple-button {
+  color: #000;
+  font-family: Noto Sans TC;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 180px;
+  height: 30px;
+  flex-shrink: 0;
+  margin: 10px;
+}
+.box2 {
+  margin: 20px;
+  width: 550px;
+  height: 100px;
+  background-color: rgb(1, 1, 43);
+  border-radius: 20px;
+}
+.box3 {
+  margin-top: 20px;
+  width: 550px;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.content1 {
+  width: 225.299px;
+  height: 225.299px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  margin: 20px;
+  border: 1px solid #d36805;
+  background-color: lightgray 50%;
+}
+.circular-button {
+  color: #000;
+  font-family: Noto Sans TC;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 80px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 60px;
+  height: 60px;
+  margin: 0px;
 }
