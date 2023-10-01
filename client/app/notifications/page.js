@@ -14,16 +14,20 @@ const updateItems = [
 ];
 const upcomingEvents = [
   {
-    events: "",
+    events: "Green City Clean-Up",
+    imgs: "/images/green.jpg",
   },
   {
-    events: "",
+    events: "Youth Voter Registration Drive",
+    imgs: "/images/vote.jpeg",
   },
   {
-    events: "",
+    events: "Community Health and Wellness Fair",
+    imgs: "/images/health.jpeg",
   },
   {
-    events: "",
+    events: "Homelessness Awareness Week",
+    imgs: "/images/homeless.jpeg",
   },
 ];
 export default function notificationsPage() {
@@ -56,7 +60,17 @@ export default function notificationsPage() {
         <div className="vertical-rectangular-block">
           <h1 style={{ color: "white" }}>UPCOMING EVENTS</h1>
           {upcomingEvents.map((item) => {
-            return <div className="boxes"></div>;
+            return (
+              <div className="container feed-content">
+                <div className="boxes justify-center p-9 mr-5 ">
+                  {item.events}
+                  <img
+                    src={item.imgs}
+                    style={{ height: 90 + "px", width: 550 + "px" }}
+                  />
+                </div>
+              </div>
+            );
           })}
         </div>
       </div>

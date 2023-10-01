@@ -12,7 +12,8 @@
     "@heroicons/react": "^2.0.18",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "web3": "^4.1.2"
   },
   "devDependencies": {
     "autoprefixer": "latest",

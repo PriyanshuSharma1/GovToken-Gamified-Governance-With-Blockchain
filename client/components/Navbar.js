@@ -13,12 +13,12 @@ const navItems = [
     icon: <HomeIcon />,
   },
   {
-    name: "Rewards",
-    href: "/rewards",
+    name: "Poll",
+    href: "/poll",
     icon: <GiftIcon />,
   },
   {
-    name: "Points",
+    name: "Reward Points",
     href: "/points",
     icon: <CurrencyDollarIcon />,
   },
